@@ -19,6 +19,7 @@ import { RouterLinkWithHref, RouterOutlet } from "@angular/router";
   <a [routerLink]="'/properties'">Buy and Sell Properties</a>
   <a [routerLink]="'/posts'">Read our Blog</a>
   <a [routerLink]="'/reactiveForms'">Reactive Forms</a>
+  <a [routerLink]="'/material'">Material Demo</a>
   <router-outlet></router-outlet>
 </section>
 </main>
