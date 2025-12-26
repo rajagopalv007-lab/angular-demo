@@ -1,0 +1,15 @@
+<div class="properties-container">
+  @for( house of houses;track house.id){
+    <div class="property-card">
+      <img [src]="house.image" alt="Image of {{ house.title }}" class="property-image" />
+      <div class="property-details">
+        <h2 class="property-title">{{ house.title }}</h2>
+        <p class="property-price">${{ house.price | number }}</p>
+      
+      </div>
+    </div>
+  }
+  @empty {
+    <p>No properties found.</p>
+  }
+</div>
